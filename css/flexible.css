@@ -1,0 +1,79 @@
+/*Alex Abreu
+11/30/2021*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+.header {
+    padding: 60px;
+    align text: center;
+    background: #1abc9c;
+    color: white;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side {
+    length: 30%
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.main {
+  length: 70%
+  background-color: white;
+  padding: 20px;
+
+}
+
+.left {
+  flex: 33%;
+  background-color: #2196F3;
+  padding:20px;
+  height: 250px;
+}
+
+.center {
+  flex: 33%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  height: 250px;
+}
+
+.right {
+  flex: 33%;
+  background-color:#4CAF50;
+  padding: 20px;
+  height: 250px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .row, .navbar {
+        flex-direction: column;
+    }
+
+    .footer{
+      position: static;
+    }
+}
